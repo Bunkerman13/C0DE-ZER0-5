@@ -32,7 +32,7 @@ public class playerBox : MonoBehaviour
 
 
 
-        RaycastHit hit;
+        //RaycastHit hit;
         
 
         //scoreText.text = "Score: " + score.ToString();
