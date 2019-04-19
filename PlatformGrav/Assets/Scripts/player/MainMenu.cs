@@ -66,4 +66,8 @@ public class MainMenu : MonoBehaviour {
         PauseButton.SetActive(true);
         Time.timeScale = 1;
     }
+    public void GameObject()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
