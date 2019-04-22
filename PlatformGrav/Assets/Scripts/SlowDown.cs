@@ -10,7 +10,10 @@ public class SlowDown : PowerUp {
 
         if (isActive)
         {
-            Move.SPEED = 8f;
+            if (Move.SPEED != 8f)
+            {
+                Move.SPEED = 8f;
+            }
             return;
         }
 

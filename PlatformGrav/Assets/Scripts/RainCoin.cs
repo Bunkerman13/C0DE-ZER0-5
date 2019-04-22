@@ -20,10 +20,20 @@ public class RainCoin : PowerUp {
 
         base.Update();
 
+        //while active, move any coins on screen down
+        if (isActive)
+        {
+            GameObject[] objs = GameObject.FindGameObjectsWithTag("Coin");
+            foreach (GameObject g in objs)
+            {
+                g.transform.position += Vector3.down * .1f;
+            }
+        }
+
         //spawns them every other second
         if (isActive && coinPrefab != null)
         {
-            if ((int)duration % 2 == 1)
+            if ((int)duration % 2 == 1 && duration > 3)
             {
                 //rain coins at random positions on screen
                 Instantiate(coinPrefab, new Vector2(Random.Range(playerPos.x + 25, playerPos.x + 60),
@@ -31,23 +41,20 @@ public class RainCoin : PowerUp {
 
             }
 
-            if (duration < 3)
+            if (duration <= 3)
             {
                 GameObject[] objs = GameObject.FindGameObjectsWithTag("Coin");
 
                 foreach (GameObject g in objs)
                 {
+                    //fade out sprite before it disappears
+                    Color tempColor = g.GetComponent<SpriteRenderer>().color;
+                    tempColor.a -= .1f;
+                    g.GetComponent<SpriteRenderer>().color = tempColor;
+
                     Destroy(g, 3);
                 }
             }
-
-            RAINING = true;
-
-        }
-        else
-        {
-            RAINING = false;
-            
         }
 	}
 

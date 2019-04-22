@@ -26,7 +26,13 @@ public class Collect : MonoBehaviour
             }
             else if (gameObject.tag == "RainCoin")
             {
-                gameObject.GetComponent<RainCoin>().isActive = true;
+                
+                if (RainCoin.RAINING == false)
+                {
+                    gameObject.GetComponent<RainCoin>().isActive = true;
+                    RainCoin.RAINING = true;
+                }
+                
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 gameObject.transform.position = new Vector2(-100, -100);
             }
