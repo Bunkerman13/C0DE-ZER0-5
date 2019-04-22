@@ -2054,7 +2054,7 @@ MonoBehaviour:
   spike: {fileID: 1156128477435612, guid: ad2cb1e1f02faa141b478c3663910bb5, type: 3}
   coin: {fileID: 1491064387491936, guid: e99e320059b3bb84384ea5782c2b0e35, type: 3}
   ground: {fileID: 1118183688883002, guid: aa967eb4b79c28c458bbfb0b95bdc3f0, type: 3}
-  groundRotate: {fileID: 1590078037281232402, guid: 9b27ed2f256dcda478772c7167e38dc0,
+  groundRotate: {fileID: 9084266655772916879, guid: c8ed7d230e832144aaaf697e5fda88b0,
     type: 3}
   groundLong: {fileID: 7834600347290186359, guid: fc49b90151aea58458a5cdfea8d0e7ba,
     type: 3}
