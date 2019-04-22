@@ -12,12 +12,12 @@ public class coinMagnet : PowerUp {
 	
 	// Update is called once per frame
 	void Update () {
-		if (isActive == true) {
+		if (isActive == true&&duration>1) {
 			
 			hit = Physics2D.CircleCastAll(new Vector2(player.transform.position.x, player.transform.position.y), 10, Vector2.right, 10);
 
 			for (int i = 0; i < hit.Length; i++) {
-				if (hit [i].transform.tag == "Coin" && hit[i] != null) {
+				if (hit [i].transform.tag == "Coin" && hit[i]) {
 					Debug.Log ("coin");
 					MySceneManager.Instance.score += 10;
 					MySceneManager.Instance.multiplier += .1f;
