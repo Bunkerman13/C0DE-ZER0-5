@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Collect : MonoBehaviour
 {
-    
+   
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,6 +23,7 @@ public class Collect : MonoBehaviour
                 gameObject.GetComponent<SlowDown>().isActive = true;
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 gameObject.transform.position = new Vector2(-100, -100);
+                MySceneManager.Instance.pick3.Play();
             }
             else if (gameObject.tag == "RainCoin")
             {
@@ -35,11 +36,12 @@ public class Collect : MonoBehaviour
                 
                 gameObject.GetComponent<SpriteRenderer>().enabled = false;
                 gameObject.transform.position = new Vector2(-100, -100);
+                MySceneManager.Instance.pick2.Play();
             }
             else if (gameObject.tag == "Coin")
             {
 
-
+                MySceneManager.Instance.coin.Play();
                 MySceneManager.Instance.score += 10;
                 MySceneManager.Instance.multiplier += .1f;
                 MySceneManager.Instance.coins++;
@@ -54,6 +56,7 @@ public class Collect : MonoBehaviour
                 //Physics.gravity = new Vector3(0, -50, 0);
                 Physics2D.gravity = new Vector2(0, -50f);
                 other.gameObject.GetComponent<MainMenu>().Menuetwo();
+                MySceneManager.Instance.hit.Play();
             }
             else if (gameObject.tag == "Mag")
             {
@@ -61,6 +64,7 @@ public class Collect : MonoBehaviour
 				gameObject.GetComponent<coinMagnet> ().duration = 10;
 				gameObject.GetComponent<SpriteRenderer>().enabled = false;
 				gameObject.transform.position = new Vector2(-100, -100);
+                MySceneManager.Instance.pick1.Play();
                 //Destroy(gameObject);
             }
             
