@@ -12,8 +12,8 @@ public class coinMagnet : PowerUp {
 	
 	// Update is called once per frame
 	void Update () {
-		if (isActive == true&&duration>1) {
-			
+		if (isActive == true&&duration>0) {
+            duration -= Time.deltaTime;
 			hit = Physics2D.CircleCastAll(new Vector2(player.transform.position.x, player.transform.position.y), 10, Vector2.right, 10);
 
 			for (int i = 0; i < hit.Length; i++) {
