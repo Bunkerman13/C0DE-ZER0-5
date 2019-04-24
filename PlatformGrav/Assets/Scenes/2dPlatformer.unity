@@ -2056,7 +2056,7 @@ MonoBehaviour:
   ground: {fileID: 1118183688883002, guid: aa967eb4b79c28c458bbfb0b95bdc3f0, type: 3}
   groundRotate: {fileID: 9084266655772916879, guid: c8ed7d230e832144aaaf697e5fda88b0,
     type: 3}
-  groundLong: {fileID: 7834600347290186359, guid: fc49b90151aea58458a5cdfea8d0e7ba,
+  groundLong: {fileID: 2564271768114419669, guid: b9c107be99ac5d344a7ccbdb56a93256,
     type: 3}
   slow: {fileID: 1798636536404382, guid: d51c2da9059201147899bb715bda4771, type: 3}
   mag: {fileID: 1957704952909282, guid: a0cb4992677127141b6d54fc73cdc65f, type: 3}
@@ -3606,7 +3606,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 0
 --- !u!61 &1423806699
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -35,14 +35,16 @@ public class Collect : MonoBehaviour
             else if (gameObject.tag == "Coin")
             {
 
-                MySceneManager.Instance.coin.Play();
                 MySceneManager.Instance.score += 10;
                 MySceneManager.Instance.multiplier += .1f;
                 MySceneManager.Instance.coins++;
-                Destroy(gameObject);
+                MySceneManager.Instance.coin.Play();
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                gameObject.SetActive(false);
             }
             else if(gameObject.tag == "Spike")
             {
+                Debug.Log("Hit a spike");
                 MySceneManager.Instance.finalScore = MySceneManager.Instance.score;
                 MySceneManager.Instance.score = 0;
                 MySceneManager.Instance.coins = 0;
