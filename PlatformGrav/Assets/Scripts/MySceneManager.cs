@@ -17,12 +17,15 @@ public class MySceneManager : Singleton<MySceneManager> {
     public AudioSource pick2;
     public AudioSource pick3;
 
-    private void Start()
+    private void Update()
     {
-        coin = GameObject.Find("Coin").GetComponent<AudioSource>();
-        hit = GameObject.Find("Hit").GetComponent<AudioSource>();
-        pick1 = GameObject.Find("Pick1").GetComponent<AudioSource>();
-        pick2 = GameObject.Find("Pick2").GetComponent<AudioSource>();
-        pick3 = GameObject.Find("Pick3").GetComponent<AudioSource>();
+        if (coin == null)
+        {
+            coin = GameObject.Find("Coin").GetComponent<AudioSource>();
+            hit = GameObject.Find("Hit").GetComponent<AudioSource>();
+            pick1 = GameObject.Find("Pick1").GetComponent<AudioSource>();
+            pick2 = GameObject.Find("Pick2").GetComponent<AudioSource>();
+            pick3 = GameObject.Find("Pick3").GetComponent<AudioSource>();
+        }
     }
 }
