@@ -44,7 +44,7 @@ public class Collect : MonoBehaviour
             }
             else if(gameObject.tag == "Spike")
             {
-                Debug.Log("Hit a spike");
+                .Log("Hit a spike");
                 MySceneManager.Instance.finalScore = MySceneManager.Instance.score;
                 MySceneManager.Instance.score = 0;
                 MySceneManager.Instance.coins = 0;
