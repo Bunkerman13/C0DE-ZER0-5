@@ -28,12 +28,12 @@ public class MySceneManager : Singleton<MySceneManager> {
             pick3 = GameObject.Find("Pick3").GetComponent<AudioSource>();
         }
     }
-    private void Update()
-    {
-        coin = GameObject.Find("Coin").GetComponent<AudioSource>();
-        hit = GameObject.Find("Hit").GetComponent<AudioSource>();
-        pick1 = GameObject.Find("Pick1").GetComponent<AudioSource>();
-        pick2 = GameObject.Find("Pick2").GetComponent<AudioSource>();
-        pick3 = GameObject.Find("Pick3").GetComponent<AudioSource>();
-    }
+    //private void Update()
+    //{
+    //    coin = GameObject.Find("Coin").GetComponent<AudioSource>();
+    //    hit = GameObject.Find("Hit").GetComponent<AudioSource>();
+    //    pick1 = GameObject.Find("Pick1").GetComponent<AudioSource>();
+    //    pick2 = GameObject.Find("Pick2").GetComponent<AudioSource>();
+    //    pick3 = GameObject.Find("Pick3").GetComponent<AudioSource>();
+    //}
 }
