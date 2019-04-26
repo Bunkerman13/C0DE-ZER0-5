@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3527622132023337337}
   - component: {fileID: 656525377413335591}
   - component: {fileID: 4232792214025023010}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GroundElevator
   m_TagString: GroundNew
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2345150123994311229}
   - component: {fileID: 2945719888237858670}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GroundMove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
