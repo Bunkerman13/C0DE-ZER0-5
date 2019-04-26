@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 114617671900971796}
   - component: {fileID: 114768787385522662}
   - component: {fileID: 70371046322935938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RainCoinPrefab
   m_TagString: RainCoin
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3089476509511640377}
   - component: {fileID: 7462422160189881965}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

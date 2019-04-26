@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6096644267302756733}
   - component: {fileID: 7438316994186757496}
   - component: {fileID: 6114151149098698966}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSpin
   m_TagString: GroundNew
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9010707169378828647}
   - component: {fileID: 8459624130142561332}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundSpinMove
   m_TagString: Untagged
   m_Icon: {fileID: 0}

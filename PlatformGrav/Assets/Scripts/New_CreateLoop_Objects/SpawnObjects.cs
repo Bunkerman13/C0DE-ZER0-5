@@ -65,7 +65,7 @@ public class SpawnObjects : MonoBehaviour {
 
 
         //Spikes
-        if (num > 900 && num < 990)
+        if (num > 900 && num < 985)
             temp = Instantiate(spike, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height/2, height/2), 0), Quaternion.identity);
         //Coins
         else if (num >= 0 && num < 800)
@@ -80,13 +80,13 @@ public class SpawnObjects : MonoBehaviour {
         else if (num > 875 && num < 900)
             temp = Instantiate(groundLong, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
         //rain
-        else if (num > 990 && num < 995)
+        else if (num > 985 && num < 990)
             temp = Instantiate(rain, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
         //slow
-        else if (num > 995 && num < 999)
+        else if (num > 990 && num < 995)
             temp = Instantiate(slow, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
         //magnet
-        else if (num == 999||num==1000)
+        else if (num == 995||num==1000)
             temp = Instantiate(mag, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
 
         return temp;

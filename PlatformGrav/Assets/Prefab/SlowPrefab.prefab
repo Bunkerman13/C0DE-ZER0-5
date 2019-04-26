@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 114081248908332432}
   - component: {fileID: 114846107521770428}
   - component: {fileID: 70013343082720002}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SlowPrefab
   m_TagString: SlowAbility
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6899530212871523504}
   - component: {fileID: 430276373732151584}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
