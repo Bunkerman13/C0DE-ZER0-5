@@ -14,6 +14,7 @@ public class LooperBox : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("Hit the end of the screen");
             MySceneManager.Instance.finalScore = MySceneManager.Instance.score;
             MySceneManager.Instance.score = 0;
             MySceneManager.Instance.coins = 0;
