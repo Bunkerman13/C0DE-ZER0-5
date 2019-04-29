@@ -45,8 +45,8 @@ public class Collect : MonoBehaviour
                 MySceneManager.Instance.multiplier += .1f;
                 MySceneManager.Instance.coins++;
                 MySceneManager.Instance.coin.Play();
-                gameObject.GetComponent<SpriteRenderer>().enabled = false;
-                gameObject.SetActive(false);
+                //gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                Destroy(gameObject);
             }
             else if(gameObject.tag == "Spike")
             {
