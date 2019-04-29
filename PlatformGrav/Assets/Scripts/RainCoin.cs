@@ -52,8 +52,8 @@ public class RainCoin : PowerUp {
                     tempColor.a -= .1f;
                     g.GetComponent<SpriteRenderer>().color = tempColor;
 
-                    // Destroy(g, 3);
-                    g.SetActive(false);
+                    Destroy(g, 3);
+                    //g.SetActive(false);
                 }
             }
         }
