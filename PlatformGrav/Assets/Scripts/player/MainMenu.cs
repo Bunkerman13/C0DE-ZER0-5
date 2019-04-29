@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
-    public GameObject PauseMenu, PauseButton;
+    public GameObject PauseMenu, PauseButton, Unpause;
     public void Play()
     {
         SceneManager.LoadScene(1);
@@ -57,11 +57,13 @@ public class MainMenu : MonoBehaviour {
     public void Pause()
     {
         PauseMenu.SetActive(true);
+        Unpause.SetActive(true);
         PauseButton.SetActive(false);
         Time.timeScale = 0;
     }
     public void UnPause()
     {
+        Unpause.SetActive(false);
         PauseMenu.SetActive(false);
         PauseButton.SetActive(true);
         Time.timeScale = 1;

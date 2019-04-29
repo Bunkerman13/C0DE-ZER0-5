@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SlowDown : PowerUp {
-	
-	// Update is called once per frame
-	public override void Update () {
+
+
+    // Update is called once per frame
+    public override void Update () {
         base.Update();
+
 
         if (isActive)
         {
@@ -23,7 +25,6 @@ public class SlowDown : PowerUp {
             //Destroy(gameObject);
             isActive = !isActive;
             Destroy(this);
-
         }
       
 
