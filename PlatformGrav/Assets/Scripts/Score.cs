@@ -9,7 +9,7 @@ public class Score : MonoBehaviour {
 	void Start () {
         MySceneManager.Instance.score = 0;
         MySceneManager.Instance.multiplier = 0;
-        GetComponent<Text>().fontSize = 14;
+        GetComponent<Text>().fontSize = 64;
 
     }
 	
