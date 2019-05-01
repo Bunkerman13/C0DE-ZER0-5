@@ -4,12 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 public class gameovertext : MonoBehaviour
 {
-    string final;
+    public int identifier;
     // Start is called before the first frame update
     void Start()
     {
-       final=GameObject.Find("MySceneManager (Singleton)").GetComponent<MySceneManager>().scoreText;
-        gameObject.GetComponent < Text >().text= final;
+        //final=GameObject.Find("MySceneManager (Singleton)").GetComponent<MySceneManager>().scoreText;
+        if(identifier == 1)
+            gameObject.GetComponent < Text >().text= "Final Score: " + MySceneManager.Instance.finalScore;
+        else if(identifier == 2)
+            gameObject.GetComponent<Text>().text = "Final Coins: " + MySceneManager.Instance.coins;
+        else if(identifier == 3)
+            gameObject.GetComponent<Text>().text = "Final Multiplier: " + MySceneManager.Instance.multiplier;
     }
 
     // Update is called once per frame
