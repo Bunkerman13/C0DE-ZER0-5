@@ -45,9 +45,12 @@ public class SpawnObjects : MonoBehaviour {
             {
                 GameObject temp = SpawningObjects();
                 //Debug.Log("Missing: " + x);
-                if (temp.tag != "Coin")
+                if (temp != null)
                 {
-                    objects[x] = temp;
+                    if (temp.tag != "Coin")
+                    {
+                        objects[x] = temp;
+                    }
                 }
             }
         }
@@ -55,7 +58,7 @@ public class SpawnObjects : MonoBehaviour {
 
     GameObject SpawningObjects()
     {
-        int num = Random.Range(0, 1000);
+        int num = Random.Range(0, 1001);
 
         GameObject temp = null;
 

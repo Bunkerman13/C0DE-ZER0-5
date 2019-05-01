@@ -9,7 +9,9 @@ public class MySceneManager : Singleton<MySceneManager> {
     public float multiplier;
     public string scoreText;
     public int coins;
-    public float finalScore;
+    public int finalScore;
+    public int finalCoins;
+    public float finalMultiplier;
 
     public AudioSource coin;
     public AudioSource hit;
@@ -17,22 +19,11 @@ public class MySceneManager : Singleton<MySceneManager> {
     public AudioSource pick2;
     public AudioSource pick3;
 
-    private void Update()
-    {
-        if (coin == null)
-        {
-            coin = GameObject.Find("Coin").GetComponent<AudioSource>();
-            hit = GameObject.Find("Hit").GetComponent<AudioSource>();
-            pick1 = GameObject.Find("Pick1").GetComponent<AudioSource>();
-            pick2 = GameObject.Find("Pick2").GetComponent<AudioSource>();
-            pick3 = GameObject.Find("Pick3").GetComponent<AudioSource>();
-        }
-        SetScore();
-    }
-    private void SetScore()
-    {
-        scoreText = "Final Score: " + finalScore;
-    }
+    
+    //private void SetScore()
+    //{
+    //    scoreText = "Final Score: " + finalScore;
+    //}
 
     //private void Update()
     //{

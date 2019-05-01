@@ -12,14 +12,14 @@ public class gameovertext : MonoBehaviour
         if(identifier == 1)
             gameObject.GetComponent < Text >().text= "Final Score: " + MySceneManager.Instance.finalScore;
         else if(identifier == 2)
-            gameObject.GetComponent<Text>().text = "Final Coins: " + MySceneManager.Instance.coins;
+            gameObject.GetComponent<Text>().text = "Final Coins: " + MySceneManager.Instance.finalCoins;
         else if(identifier == 3)
-            gameObject.GetComponent<Text>().text = "Final Multiplier: " + MySceneManager.Instance.multiplier;
+            gameObject.GetComponent<Text>().text = "Final Multiplier: " + MySceneManager.Instance.finalMultiplier;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.Log(MySceneManager.Instance.finalCoins);
     }
 }

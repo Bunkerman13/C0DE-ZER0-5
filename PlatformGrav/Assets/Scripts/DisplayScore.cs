@@ -11,5 +11,7 @@ public class DisplayScore : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Debug.Log(MySceneManager.Instance.finalScore);
-	}
+        Debug.Log(MySceneManager.Instance.finalCoins);
+        Debug.Log(MySceneManager.Instance.finalMultiplier);
+    }
 }

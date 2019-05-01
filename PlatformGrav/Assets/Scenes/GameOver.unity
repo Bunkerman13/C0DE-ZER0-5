@@ -147,8 +147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -244, y: 0}
-  m_SizeDelta: {x: 200, y: 30}
+  m_AnchoredPosition: {x: -1, y: 0}
+  m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2946555
 MonoBehaviour:
@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bee18a411f86974d8fb15a56c7cd884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  identifier: 2
 --- !u!114 &2946556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +196,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Final Score
+  m_Text: Final Coins
 --- !u!222 &2946557
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -566,8 +567,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -244, y: 0}
-  m_SizeDelta: {x: 200, y: 30}
+  m_AnchoredPosition: {x: -2, y: 37}
+  m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &365289626
 MonoBehaviour:
@@ -623,6 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bee18a411f86974d8fb15a56c7cd884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  identifier: 1
 --- !u!1 &422985365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,8 +1215,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -244, y: 0}
-  m_SizeDelta: {x: 200, y: 30}
+  m_AnchoredPosition: {x: -1, y: -37}
+  m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1867970624
 MonoBehaviour:
@@ -1228,6 +1230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bee18a411f86974d8fb15a56c7cd884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  identifier: 3
 --- !u!114 &1867970625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,7 +1264,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Final Score
+  m_Text: Final Multiplier
 --- !u!222 &1867970626
 CanvasRenderer:
   m_ObjectHideFlags: 0
