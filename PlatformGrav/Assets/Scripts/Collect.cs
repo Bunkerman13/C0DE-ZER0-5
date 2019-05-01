@@ -55,7 +55,7 @@ public class Collect : MonoBehaviour
                 MySceneManager.Instance.finalCoins = MySceneManager.Instance.coins;
                 MySceneManager.Instance.multiplier *= 10f;
                 int temp = (int)MySceneManager.Instance.multiplier;
-                MySceneManager.Instance.multiplier = MySceneManager.Instance.multiplier / 10f;
+                MySceneManager.Instance.multiplier = temp / 10f;
                 MySceneManager.Instance.finalMultiplier = MySceneManager.Instance.multiplier;
                 MySceneManager.Instance.score = 0;
                 MySceneManager.Instance.coins = 0;
