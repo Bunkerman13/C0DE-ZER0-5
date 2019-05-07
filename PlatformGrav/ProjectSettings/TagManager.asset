@@ -14,6 +14,7 @@ TagManager:
   - Loop
   - RainCoin
   - MagUi
+  - background
   layers:
   - Default
   - TransparentFX
