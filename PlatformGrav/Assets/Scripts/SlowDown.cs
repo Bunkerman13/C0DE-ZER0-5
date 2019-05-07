@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SlowDown : PowerUp {
-	
-	// Update is called once per frame
-	public override void Update () {
+
+
+    // Update is called once per frame
+    public override void Update () {
         base.Update();
+
 
         if (isActive)
         {
             if (Move.SPEED != 8f)
             {
+                GameObject.Find("Music").GetComponent<AudioSource>().pitch = 0.85f;
                 Move.SPEED = 8f;
             }
             return;
@@ -20,10 +23,9 @@ public class SlowDown : PowerUp {
         if (duration < 0)
         {
             Move.SPEED = 20f;
-            //Destroy(gameObject);
+            GameObject.Find("Music").GetComponent<AudioSource>().pitch = 1;
             isActive = !isActive;
             Destroy(this);
-
         }
       
 

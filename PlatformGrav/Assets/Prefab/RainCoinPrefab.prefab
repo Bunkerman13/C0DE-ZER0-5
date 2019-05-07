@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 114617671900971796}
   - component: {fileID: 114768787385522662}
   - component: {fileID: 70371046322935938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RainCoinPrefab
   m_TagString: RainCoin
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.83137256, g: 0.54075736, b: 0.5058824, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -154,7 +154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3089476509511640377}
   - component: {fileID: 7462422160189881965}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 22a46fe9d3386924ab22a58ccb28ec9f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

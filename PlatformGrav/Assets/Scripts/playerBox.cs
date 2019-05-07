@@ -5,116 +5,18 @@ using UnityEngine.UI;
 
 public class playerBox : MonoBehaviour
 {
-
-    // Use this for initialization
-    public bool jump = false;
-    public bool stop = false;
-    public Camera cam;
-    public Rigidbody rb;
-    public bool magnet = false;
-    public float timer = 0.0f;
-    public GameObject endScreen;
-
-    void Start()
+    private void Start()
     {
-        //Camera.main.transform.position.x = gameObject.transform.position.x + 2;
-        stop = false;
-        jump = false;
-        //magnet = true;
-
-        //endScreen.SetActive(false);
-        
+        if (MySceneManager.Instance.coin == null)
+        {
+            MySceneManager.Instance.coin = GameObject.Find("Coin").GetComponent<AudioSource>();
+            MySceneManager.Instance.hit = GameObject.Find("Hit").GetComponent<AudioSource>();
+            MySceneManager.Instance.pick1 = GameObject.Find("Pick1").GetComponent<AudioSource>();
+            MySceneManager.Instance.pick2 = GameObject.Find("Pick2").GetComponent<AudioSource>();
+            MySceneManager.Instance.pick3 = GameObject.Find("Pick3").GetComponent<AudioSource>();
+        }
+        //SetScore();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-
-
-        //RaycastHit hit;
-        
-
-        //scoreText.text = "Score: " + score.ToString();
-
-
-        //if (stop == false)
-        //{
-
-        //    cam.transform.position = new Vector3(rb.transform.position.x + 1.0f, cam.transform.position.y, cam.transform.position.z);
-
-        //    if (Input.GetMouseButtonUp(0)&&jump==true)
-        //    {
-        //        rb.AddForce(new Vector3(0.0f, 3.0f, 0.0f) * 2.5f, ForceMode.Impulse);
-        //        jump = false;
-        //    }
-
-        //}
-        //else
-        //{
-        //    cam.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
-        //}
-
-        //cam.transform.position = new Vector3(this.transform.position.x+15, cam.transform.position.y, cam.transform.position.z);//cam.transform.position.x, cam.transform.position.y, cam.transform.position.z);
-
-        //endScreen.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y, endScreen.transform.position.z);
-
-    }
-
-    //void OnCollisionEnter2D(Collision2D other)
-    //{
-    //    //if (other.gameObject.tag == "Ground")
-    //    //{
-    //    //    jump = true;
-    //    //}
-
-    //    //if (other.gameObject.tag == "End")
-    //    //{
-    //    //    stop = true;
-    //    //    winText.text = "You Win!!!!";
-    //    //    Destroy(rb.gameObject);
-    //    //    endScreen.SetActive(true);
-    //    //}
-
-    //    if (other.gameObject.name.Contains("Spike"))
-    //    {
-    //        //stop = true;
-    //        //winText.color = Color.red;
-    //        //winText.text = "You Lose";
-    //        //Destroy(rb.gameObject);
-    //        //endScreen.SetActive(true);
-    //        MySceneManager.Instance.finalScore = MySceneManager.Instance.score;
-    //        MySceneManager.Instance.score = 0;
-    //        MySceneManager.Instance.coins = 0;
-    //        MySceneManager.Instance.multiplier = 0;
-    //        //Physics.gravity = new Vector3(0, -50, 0);
-    //        Physics2D.gravity = new Vector2(0, -50f);
-    //        GetComponent<MainMenu>().Menuetwo();
-    //    }
-
-    //    if (other.gameObject.tag == "Coin")
-    //    {
-    //        Destroy(other.gameObject);
-
-    //        // plus 40 to score if you pick up a coin
-    //        MySceneManager.Instance.score += 40;
-    //    }
-
-    //    if (other.gameObject.tag == "Mag")
-    //    {
-    //        Destroy(other.gameObject);
-    //        magnet = true;
-    //    }
-
-    //    if(other.gameObject.tag == "SlowAbility")
-    //    {
-    //        other.gameObject.GetComponent<SlowDown>().isActive = true;
-    //        other.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-    //        other.gameObject.transform.position = new Vector2(-100, -100);
-    //    }
-
-    //}
-
     //fixed update makes score incrment every second by 1
     void FixedUpdate()
     {

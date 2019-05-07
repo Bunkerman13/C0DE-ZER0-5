@@ -7,6 +7,8 @@ public class SpawnObjects : MonoBehaviour {
     public GameObject spike;
     public GameObject coin;
     public GameObject ground;
+    public GameObject groundRotate;
+    public GameObject groundLong;
     public GameObject slow;
     public GameObject mag;
     public GameObject rain;
@@ -43,9 +45,12 @@ public class SpawnObjects : MonoBehaviour {
             {
                 GameObject temp = SpawningObjects();
                 //Debug.Log("Missing: " + x);
-                if (temp.tag != "Coin")
+                if (temp != null)
                 {
-                    objects[x] = temp;
+                    if (temp.tag != "Coin")
+                    {
+                        objects[x] = temp;
+                    }
                 }
             }
         }
@@ -53,7 +58,7 @@ public class SpawnObjects : MonoBehaviour {
 
     GameObject SpawningObjects()
     {
-        int num = Random.Range(0, 21);
+        int num = Random.Range(0, 1001);
 
         GameObject temp = null;
 
@@ -62,18 +67,29 @@ public class SpawnObjects : MonoBehaviour {
        // temp = Instantiate(rain, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
 
 
-
-        if (num > 11 && num < 15)
-            temp = Instantiate(spike, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num > 0 && num < 12)
+        //Spikes
+        if (num > 900 && num < 985)
+            temp = Instantiate(spike, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height/2, height/2), 0), Quaternion.identity);
+        //Coins
+        else if (num >= 0 && num < 800)
             temp = Instantiate(coin, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num > 14 && num < 18)
+        //Platform
+        else if (num > 800 && num < 850)
             temp = Instantiate(ground, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 18)
+        //Platform spinning
+        else if (num > 850 && num < 875)
+            temp = Instantiate(groundRotate, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
+        //Platform long
+        else if (num > 875 && num < 900)
+            temp = Instantiate(groundLong, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
+        //rain
+        else if (num > 985 && num < 990)
             temp = Instantiate(rain, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 19)
+        //slow
+        else if (num > 990 && num < 995)
             temp = Instantiate(slow, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
-        else if (num == 20)
+        //magnet
+        else if (num == 995||num==1000)
             temp = Instantiate(mag, new Vector3(centerX + Random.Range(0, width), 0 + Random.Range(-height, height), 0), Quaternion.identity);
 
         return temp;

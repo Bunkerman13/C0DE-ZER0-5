@@ -25,6 +25,10 @@ public class Loop : MonoBehaviour {
         {
             Vector2 looping = GameObject.Find("Spawn Objects").GetComponent<RectTransform>().position;
             other.gameObject.transform.position = new Vector2(looping.x, other.transform.position.y);
+            if(other.transform.name.Contains("Floor"))
+            {
+                other.gameObject.transform.position = new Vector2(looping.x + 5, other.transform.position.y);
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 70819748509274912}
   - component: {fileID: 114307069144418292}
   - component: {fileID: 114156554436830986}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: mag
   m_TagString: Mag
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.4993209, g: 0.13705947, b: 0.5283019, a: 1}
   m_FlipX: 0
@@ -151,7 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3319138667827212144}
   - component: {fileID: 97853612084578658}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

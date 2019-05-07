@@ -12,6 +12,9 @@ TagManager:
   - GroundNew
   - Mag
   - Loop
+  - RainCoin
+  - MagUi
+  - background
   layers:
   - Default
   - TransparentFX
@@ -21,9 +24,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Player
+  - Level
+  - Spawn
   - 
   - 
   - 

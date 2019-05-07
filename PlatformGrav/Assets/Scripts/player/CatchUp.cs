@@ -9,7 +9,7 @@ public class CatchUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        catchUpValue = GameObject.Find("Player").GetComponent<Transform>().position.x;
+        //catchUpValue = GameObject.Find("Player").GetComponent<Transform>().position.x;
     }
 
     // Update is called once per frame

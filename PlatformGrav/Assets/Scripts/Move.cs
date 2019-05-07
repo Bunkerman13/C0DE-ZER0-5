@@ -16,6 +16,11 @@ public class Move : MonoBehaviour {
         {
             SPEED = 20f;
         }
+        
+        if(this.tag == "background")
+        {
+            SPEED = 15f;
+        }
 
         speed = SPEED;
 	}
@@ -24,8 +29,21 @@ public class Move : MonoBehaviour {
 	void Update () {
 
         speed = SPEED;
-        transform.Translate(Vector3.left * SPEED * Time.deltaTime);
+        if(this.tag == "background")
+        {
+            transform.Translate(Vector3.right * SPEED * Time.deltaTime);
+        } else
+        {
+            transform.Translate(Vector3.left * SPEED * Time.deltaTime);
 
+        }
+        if (gameObject.transform.tag == "floor")
+        {
+            if (transform.position.x < -610)
+            {
+
+            }
+        }
         //if(transform.position.x<=-220f)
         //{
         //    transform.position = new Vector3(545f, transform.position.y, transform.position.z);
