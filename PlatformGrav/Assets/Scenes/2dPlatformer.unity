@@ -2361,8 +2361,8 @@ MonoBehaviour:
   groundLong: {fileID: 7834600347290186359, guid: fc49b90151aea58458a5cdfea8d0e7ba,
     type: 3}
   slow: {fileID: 1798636536404382, guid: d51c2da9059201147899bb715bda4771, type: 3}
-  mag: {fileID: 1798636536404382, guid: d51c2da9059201147899bb715bda4771, type: 3}
-  rain: {fileID: 1798636536404382, guid: d51c2da9059201147899bb715bda4771, type: 3}
+  mag: {fileID: 1957704952909282, guid: a0cb4992677127141b6d54fc73cdc65f, type: 3}
+  rain: {fileID: 1796573000615634, guid: af781c6a7b1f044419d72e149150c7d3, type: 3}
   objects: []
 --- !u!1 &775897720
 GameObject:
@@ -3562,7 +3562,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.09625, y: 0.8}
   m_AnchorMax: {x: 1, y: 0.98}
-  m_AnchoredPosition: {x: -21935.291, y: 3276.1003}
+  m_AnchoredPosition: {x: -21935.293, y: 3276.1006}
   m_SizeDelta: {x: 47925.207, y: 3721.5244}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1269954940
